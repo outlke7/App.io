@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نظام مسار الذكي ERP - منصة عربية متكاملة لإدارة الموظفين والحضور والإجازات والرواتب.">
+  <meta name="theme-color" content="#073661">
+  <title>مسار الذكي ERP | إدارة الموارد البشرية</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7V5a2 2 0 0 0-2-2H5a3 3 0 0 0 0 6h15a1 1 0 0 1 1 1v8a2 2 0 0 1-2 2H5a3 3 0 0 1-3-3V6"/><path d="M16 14h2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20V8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21h-4v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h4v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.15.37.37.7.66.97.29.28.68.43 1.08.43H21v4h-.09A1.7 1.7 0 0 0 19.4 15z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M13.7 21h-3.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.7 6.7 0 0 0 9.7 9.7z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-backup" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66L20 8.68M20 4v4.68h-4.68"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="القائمة الرئيسية">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span>م</span><i></i><b></b></div>
+        <div><strong>مسار الذكي</strong><small>نظام الموارد البشرية</small></div>
+      </div>
+
+      <nav class="nav-list">
+        <p class="nav-label">إدارة النظام</p>
+        <button class="nav-item active" data-page="dashboard"><svg><use href="#i-grid"/></svg><span>لوحة التحكم</span></button>
+        <button class="nav-item" data-page="employees"><svg><use href="#i-users"/></svg><span>الموظفون</span><em id="navEmployees">248</em></button>
+        <button class="nav-item" data-page="attendance"><svg><use href="#i-clock"/></svg><span>الحضور والانصراف</span></button>
+        <button class="nav-item" data-page="leaves"><svg><use href="#i-calendar"/></svg><span>الإجازات والغياب</span><em class="warn">3</em></button>
+        <button class="nav-item" data-page="payroll"><svg><use href="#i-wallet"/></svg><span>الرواتب والمسيرات</span></button>
+        <button class="nav-item" data-page="reports"><svg><use href="#i-chart"/></svg><span>التقارير والتحليلات</span></button>
+        <p class="nav-label second">الإعدادات والحوكمة</p>
+        <button class="nav-item" data-page="security"><svg><use href="#i-shield"/></svg><span>الأمان والصلاحيات</span></button>
+        <button class="nav-item" data-page="settings"><svg><use href="#i-settings"/></svg><span>إعدادات النظام</span></button>
+      </nav>
+
+      <div class="backup-card">
+        <div class="backup-row"><span class="backup-icon"><svg><use href="#i-backup"/></svg></span><div><strong>النسخ الاحتياطي</strong><small id="backupTime">آخر نسخة: اليوم، 04:00</small></div></div>
+        <button id="backupBtn">إنشاء نسخة الآن</button>
+      </div>
+      <div class="sidebar-foot"><span class="live-dot"></span> النظام يعمل بكفاءة <b>99.9%</b></div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button class="icon-button mobile-menu" id="menuBtn" aria-label="فتح القائمة"><svg><use href="#i-menu"/></svg></button>
+          <div class="crumb"><span>نظام مسار</span><b>/</b><strong id="crumbTitle">لوحة التحكم</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <label class="global-search"><svg><use href="#i-search"/></svg><input id="globalSearch" placeholder="بحث سريع..." autocomplete="off"><kbd>⌘ K</kbd></label>
+          <button class="icon-button" id="themeBtn" aria-label="تبديل الوضع"><svg id="themeIcon"><use href="#i-moon"/></svg></button>
+          <div class="popover-wrap">
+            <button class="icon-button" id="notifyBtn" aria-label="التنبيهات"><svg><use href="#i-bell"/></svg><span class="notification-dot">3</span></button>
+            <div class="notifications popover" id="notifications">
+              <div class="popover-title"><strong>التنبيهات</strong><button id="markRead">تحديد كمقروء</button></div>
+              <div class="notice-row"><span class="notice-icon danger">!</span><div><strong>عقد ينتهي قريبًا</strong><small>عقد خالد الدوسري يحتاج مراجعة</small></div><time>الآن</time></div>
+              <div class="notice-row"><span class="notice-icon gold">✓</span><div><strong>طلب إجازة جديد</strong><small>بانتظار اعتماد مدير القسم</small></div><time>12 د</time></div>
+              <div class="notice-row"><span class="notice-icon blue">i</span><div><strong>اكتمل مسير يونيو</strong><small>تم تجهيز 248 قسيمة راتب</small></div><time>1 س</time></div>
+            </div>
+          </div>
+          <button class="profile-button" id="profileBtn"><span class="avatar">بش</span><span class="profile-copy"><strong>بدر الشافعي</strong><small>مدير النظام</small></span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="page active" id="page-dashboard" data-title="لوحة التحكم">
+          <div class="page-head">
+            <div><p class="eyebrow"><span></span> نظرة عامة مباشرة</p><h1>صباح الخير، بدر</h1><p>إليك أهم مؤشرات الموارد البشرية لهذا اليوم.</p></div>
+            <div class="head-actions"><button class="button secondary" data-action="export"><svg><use href="#i-download"/></svg> تصدير التقرير</button><button class="button primary" data-action="add-employee"><svg><use href="#i-plus"/></svg> إضافة موظف</button></div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card blue"><div class="stat-top"><span class="stat-icon"><svg><use href="#i-users"/></svg></span><span class="trend up">+5.2%</span></div><p>إجمالي الموظفين</p><div class="stat-number"><strong id="totalEmployees">248</strong><small>موظف وموظفة</small></div><div class="mini-line blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="stat-card green"><div class="stat-top"><span class="stat-icon"><svg><use href="#i-check"/></svg></span><span class="trend up">92.7%</span></div><p>الحضور اليوم</p><div class="stat-number"><strong>230</strong><small>من أصل 248</small></div><div class="progress"><span style="width:92.7%"></span></div></article>
+            <article class="stat-card gold"><div class="stat-top"><span class="stat-icon"><svg><use href="#i-calendar"/></svg></span><span class="trend neutral">اليوم</span></div><p>موظفون في إجازة</p><div class="stat-number"><strong>8</strong><small>3 يعودون غدًا</small></div><div class="avatar-stack"><span>س</span><span>م</span><span>ع</span><span>+5</span></div></article>
+            <article class="stat-card red"><div class="stat-top"><span class="stat-icon">!</span><span class="trend down">إجراء مطلوب</span></div><p>عقود تنتهي قريبًا</p><div class="stat-number"><strong>9</strong><small>خلال 30 يومًا</small></div><button class="inline-link" data-page-link="employees">مراجعة العقود ←</button></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel attendance-panel">
+              <div class="panel-head"><div><h2>اتجاه الحضور</h2><p>متوسط الحضور خلال آخر 7 أيام</p></div><select id="chartRange"><option>آخر 7 أيام</option><option>آخر 30 يومًا</option><option>هذا العام</option></select></div>
+              <div class="chart-wrap">
+                <div class="chart-y"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div>
+                <svg class="line-chart" viewBox="0 0 720 250" preserveAspectRatio="none" role="img" aria-label="رسم بياني لنسبة الحضور">
+                  <defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d84e8" stop-opacity=".3"/><stop offset="1" stop-color="#1d84e8" stop-opacity="0"/></linearGradient></defs>
+                  <g class="grid-lines"><path d="M0 20H720M0 72H720M0 124H720M0 176H720M0 228H720"/></g>
+                  <path class="area-path" d="M10 86 C60 72 84 78 116 70 S180 58 220 66 S282 96 324 82 S390 54 430 60 S492 72 532 58 S600 34 648 48 S694 52 710 38 L710 228 L10 228Z"/>
+                  <path class="line-path" d="M10 86 C60 72 84 78 116 70 S180 58 220 66 S282 96 324 82 S390 54 430 60 S492 72 532 58 S600 34 648 48 S694 52 710 38"/>
+                  <g class="chart-points"><circle cx="10" cy="86" r="5"/><circle cx="116" cy="70" r="5"/><circle cx="220" cy="66" r="5"/><circle cx="324" cy="82" r="5"/><circle cx="430" cy="60" r="5"/><circle cx="532" cy="58" r="5"/><circle cx="648" cy="48" r="5"/><circle cx="710" cy="38" r="5"/></g>
+                </svg>
+                <div class="chart-x"><span>الأحد</span><span>الاثنين</span><span>الثلاثاء</span><span>الأربعاء</span><span>الخميس</span><span>الجمعة</span><span>السبت</span></div>
+              </div>
+              <div class="chart-summary"><span><i class="dot-blue"></i> حضور <b>92.7%</b></span><span><i class="dot-soft"></i> الهدف <b>95%</b></span><span class="delta">تحسن 3.1% عن الأسبوع الماضي</span></div>
+            </article>
+
+            <article class="panel departments-panel">
+              <div class="panel-head"><div><h2>توزيع الموظفين</h2><p>حسب الإدارات</p></div><button class="more-btn" aria-label="خيارات توزيع الموظفين"><svg><use href="#i-more"/></svg></button></div>
+              <div class="donut-row">
+                <div class="donut"><div><strong>248</strong><span>موظف</span></div></div>
+                <ul class="legend"><li><i class="c1"></i><span>التقنية</span><b>32%</b></li><li><i class="c2"></i><span>المبيعات</span><b>25%</b></li><li><i class="c3"></i><span>العمليات</span><b>19%</b></li><li><i class="c4"></i><span>المالية</span><b>14%</b></li><li><i class="c5"></i><span>أخرى</span><b>10%</b></li></ul>
+              </div>
+              <button class="panel-link" data-page-link="employees">عرض تفاصيل الإدارات <span>←</span></button>
+            </article>
+          </div>
+
+          <div class="bottom-grid">
+            <article class="panel compact-table-panel">
+              <div class="panel-head"><div><h2>أحدث الموظفين</h2><p>آخر المنضمين إلى الفريق</p></div><button class="text-button" data-page-link="employees">عرض الكل</button></div>
+              <div class="table-scroll"><table class="data-table mini"><thead><tr><th>الموظف</th><th>المسمى الوظيفي</th><th>الإدارة</th><th>تاريخ الانضمام</th><th>الحالة</th></tr></thead><tbody id="recentEmployeesBody"></tbody></table></div>
+            </article>
+            <article class="panel quick-panel">
+              <div class="panel-head"><div><h2>إجراءات سريعة</h2><p>المهام الأكثر استخدامًا</p></div></div>
+              <div class="quick-grid"><button data-action="add-employee"><span class="q-blue"><svg><use href="#i-users"/></svg></span><b>موظف جديد</b><small>إضافة ملف 360°</small></button><button data-page-link="leaves"><span class="q-gold"><svg><use href="#i-calendar"/></svg></span><b>اعتماد إجازة</b><small>3 طلبات معلقة</small></button><button data-page-link="payroll"><span class="q-green"><svg><use href="#i-wallet"/></svg></span><b>مسير الرواتب</b><small>تجهيز هذا الشهر</small></button><button data-page-link="reports"><span class="q-purple"><svg><use href="#i-chart"/></svg></span><b>تقرير جديد</b><small>تقارير لحظية</small></button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="page" id="page-employees" data-title="الموظفون">
+          <div class="page-head"><div><p class="eyebrow"><span></span> ملف الموظف الشامل 360°</p><h1>إدارة الموظفين</h1><p>جميع بيانات فريق العمل في مكان واحد.</p></div><div class="head-actions"><button class="button secondary" id="exportEmployees"><svg><use href="#i-download"/></svg> تصدير CSV</button><button class="button primary" data-action="add-employee"><svg><use href="#i-plus"/></svg> إضافة موظف</button></div></div>
+          <div class="filter-bar panel"><label class="table-search"><svg><use href="#i-search"/></svg><input id="employeeSearch" placeholder="بحث بالاسم أو الرقم الوظيفي أو المسمى..."></label><select id="departmentFilter"><option value="all">كل الإدارات</option><option>تقنية المعلومات</option><option>الموارد البشرية</option><option>المالية والمحاسبة</option><option>المبيعات</option><option>العمليات</option></select><select id="statusFilter"><option value="all">كل الحالات</option><option value="نشط">نشط</option><option value="في إجازة">في إجازة</option><option value="عن بُعد">عن بُعد</option></select><button class="filter-reset" id="resetFilters">إعادة ضبط</button></div>
+          <article class="panel table-panel"><div class="table-meta"><strong><span id="employeeResultCount">8</span> موظفين</strong><span>آخر تحديث: الآن</span></div><div class="table-scroll"><table class="data-table"><thead><tr><th>الموظف</th><th>المسمى والإدارة</th><th>المدير المباشر</th><th>تاريخ التعيين</th><th>الحالة</th><th>الراتب الأساسي</th><th></th></tr></thead><tbody id="employeesBody"></tbody></table></div></article>
+        </section>
+
+        <section class="page" id="page-attendance" data-title="الحضور والانصراف">
+          <div class="page-head"><div><p class="eyebrow"><span></span> متابعة لحظية</p><h1>الحضور والانصراف الذكي</h1><p>تسجيل بالبصمة والتحقق الجغرافي وحساب الإضافي تلقائيًا.</p></div><div class="head-actions"><button class="button secondary" data-action="export"><svg><use href="#i-download"/></svg> تقرير اليوم</button></div></div>
+          <div class="attendance-hero panel"><div class="clock-card"><span id="liveDate"></span><strong id="liveClock">--:--:--</strong><p>الفرع الرئيسي - الرياض</p><button class="button primary wide" id="checkInBtn">تسجيل الحضور الآن</button></div><div class="attendance-kpis"><div><span class="ring success">93%</span><p>نسبة الحضور</p><strong>230 موظفًا</strong></div><div><span class="ring warning">7</span><p>متأخرون اليوم</p><strong>متوسط 18 دقيقة</strong></div><div><span class="ring danger">3</span><p>غياب دون عذر</p><strong>بانتظار الإجراء</strong></div></div></div>
+          <article class="panel table-panel"><div class="panel-head"><div><h2>سجل اليوم</h2><p>حالة تسجيل الموظفين حتى الآن</p></div><label class="table-search small"><svg><use href="#i-search"/></svg><input id="attendanceSearch" placeholder="بحث عن موظف"></label></div><div class="table-scroll"><table class="data-table"><thead><tr><th>الموظف</th><th>وقت الحضور</th><th>وقت الانصراف</th><th>ساعات العمل</th><th>الموقع</th><th>الحالة</th></tr></thead><tbody id="attendanceBody"></tbody></table></div></article>
+        </section>
+
+        <section class="page" id="page-leaves" data-title="الإجازات والغياب">
+          <div class="page-head"><div><p class="eyebrow"><span></span> دورة اعتماد مرنة</p><h1>الإجازات والغياب</h1><p>تابع الأرصدة والطلبات واعتمدها من شاشة واحدة.</p></div><div class="head-actions"><button class="button primary" id="newLeaveBtn"><svg><use href="#i-plus"/></svg> طلب إجازة</button></div></div>
+          <div class="leave-stats"><div class="panel"><span class="q-gold"><svg><use href="#i-clock"/></svg></span><div><small>طلبات معلقة</small><strong id="pendingLeaves">3</strong></div></div><div class="panel"><span class="q-green"><svg><use href="#i-check"/></svg></span><div><small>معتمدة هذا الشهر</small><strong>21</strong></div></div><div class="panel"><span class="q-blue"><svg><use href="#i-calendar"/></svg></span><div><small>في إجازة الآن</small><strong>8</strong></div></div></div>
+          <article class="panel requests-panel"><div class="panel-head"><div><h2>طلبات بانتظار الاعتماد</h2><p>تحتاج إلى مراجعتك</p></div></div><div id="leaveRequests" class="request-list"></div></article>
+        </section>
+
+        <section class="page" id="page-payroll" data-title="الرواتب والمسيرات">
+          <div class="page-head"><div><p class="eyebrow"><span></span> أتمتة مالية دقيقة</p><h1>الرواتب والمسيرات</h1><p>حساب الاستحقاقات والاستقطاعات وتوليد ملفات الدفع.</p></div><div class="head-actions"><button class="button secondary"><svg><use href="#i-file"/></svg> إعدادات المسير</button><button class="button primary" id="runPayrollBtn">تشغيل مسير يوليو</button></div></div>
+          <div class="payroll-banner"><div><span>مسير يوليو 2026</span><strong>لم يتم التشغيل بعد</strong><p>سيتم احتساب الرواتب والبدلات والاستقطاعات لـ 248 موظفًا.</p></div><div class="payroll-total"><small>إجمالي تقديري</small><strong>3,842,650 <em>ر.س</em></strong></div></div>
+          <div class="stats-grid payroll-stats"><article class="stat-card"><p>إجمالي الأساسي</p><div class="stat-number"><strong>3.12M</strong><small>ريال</small></div></article><article class="stat-card"><p>البدلات</p><div class="stat-number"><strong>862K</strong><small>ريال</small></div></article><article class="stat-card"><p>الاستقطاعات</p><div class="stat-number"><strong>139K</strong><small>ريال</small></div></article><article class="stat-card"><p>صافي الرواتب</p><div class="stat-number"><strong>3.84M</strong><small>ريال</small></div></article></div>
+          <article class="panel table-panel"><div class="panel-head"><div><h2>آخر المسيرات</h2><p>سجل عمليات الرواتب الشهرية</p></div></div><div class="table-scroll"><table class="data-table"><thead><tr><th>الشهر</th><th>عدد الموظفين</th><th>إجمالي الرواتب</th><th>تاريخ التشغيل</th><th>الحالة</th><th>الإجراء</th></tr></thead><tbody><tr><td><b>يونيو 2026</b></td><td>248</td><td>3,798,200 ر.س</td><td>2026/06/25</td><td><span class="status active">مكتمل</span></td><td><button class="text-button">تنزيل الملف</button></td></tr><tr><td><b>مايو 2026</b></td><td>243</td><td>3,715,800 ر.س</td><td>2026/05/25</td><td><span class="status active">مكتمل</span></td><td><button class="text-button">تنزيل الملف</button></td></tr><tr><td><b>أبريل 2026</b></td><td>241</td><td>3,682,100 ر.س</td><td>2026/04/25</td><td><span class="status active">مكتمل</span></td><td><button class="text-button">تنزيل الملف</button></td></tr></tbody></table></div></article>
+        </section>
+
+        <section class="page" id="page-reports" data-title="التقارير والتحليلات">
+          <div class="page-head"><div><p class="eyebrow"><span></span> قرارات مدعومة بالبيانات</p><h1>التقارير والتحليلات</h1><p>تقارير فورية قابلة للتصدير والمشاركة.</p></div><div class="head-actions"><button class="button primary" id="customReportBtn"><svg><use href="#i-plus"/></svg> إنشاء تقرير</button></div></div>
+          <div class="report-grid"><button class="panel report-card" data-report="القوى العاملة"><span class="q-blue"><svg><use href="#i-users"/></svg></span><span><strong>تقرير القوى العاملة</strong><small>التوزيع، النمو، الدوران الوظيفي</small></span><b>←</b></button><button class="panel report-card" data-report="الحضور"><span class="q-green"><svg><use href="#i-clock"/></svg></span><span><strong>تقرير الحضور</strong><small>التأخير، الغياب، الإضافي</small></span><b>←</b></button><button class="panel report-card" data-report="الرواتب"><span class="q-gold"><svg><use href="#i-wallet"/></svg></span><span><strong>تقرير تكلفة الرواتب</strong><small>الميزانيات والبدلات شهريًا</small></span><b>←</b></button><button class="panel report-card" data-report="الامتثال"><span class="q-purple"><svg><use href="#i-shield"/></svg></span><span><strong>تقرير الامتثال</strong><small>العقود والوثائق والصلاحيات</small></span><b>←</b></button></div>
+          <article class="panel insights-panel"><div class="panel-head"><div><h2>نمو القوى العاملة</h2><p>مقارنة عدد الموظفين خلال 6 أشهر</p></div><span class="panel-badge">+14.8%</span></div><div class="bar-chart"><div><span style="height:52%"></span><small>فبراير</small></div><div><span style="height:58%"></span><small>مارس</small></div><div><span style="height:65%"></span><small>أبريل</small></div><div><span style="height:72%"></span><small>مايو</small></div><div><span style="height:84%"></span><small>يونيو</small></div><div><span style="height:94%"></span><small>يوليو</small></div></div></article>
+        </section>
+
+        <section class="page" id="page-security" data-title="الأمان والصلاحيات">
+          <div class="page-head"><div><p class="eyebrow"><span></span> حماية تليق ببياناتكم</p><h1>الأمان والصلاحيات</h1><p>صلاحيات متعددة المستويات وسجل كامل للعمليات.</p></div><div class="head-actions"><button class="button primary" id="addRoleBtn"><svg><use href="#i-plus"/></svg> إضافة دور</button></div></div>
+          <div class="security-grid"><article class="panel security-score"><div class="score-ring"><strong>94</strong><small>/100</small></div><div><h2>حالة الأمان ممتازة</h2><p>جميع إجراءات الحماية الأساسية مفعلة.</p><span class="status active">لا توجد مخاطر حرجة</span></div></article><article class="panel security-features"><div><span class="q-green"><svg><use href="#i-check"/></svg></span><p><b>تشفير البيانات</b><small>AES-256 أثناء الحفظ والنقل</small></p></div><div><span class="q-blue"><svg><use href="#i-shield"/></svg></span><p><b>التحقق الثنائي</b><small>مفعّل للحسابات الإدارية</small></p></div><div><span class="q-gold"><svg><use href="#i-file"/></svg></span><p><b>سجل العمليات</b><small>تسجيل كامل لجميع الأنشطة</small></p></div></article></div>
+          <article class="panel roles-panel"><div class="panel-head"><div><h2>الأدوار والصلاحيات</h2><p>إدارة مستوى وصول المستخدمين</p></div></div><div class="roles-list"><div><span class="role-icon">مد</span><p><b>مدير النظام</b><small>كامل الصلاحيات</small></p><strong>2 مستخدم</strong><button class="text-button">تعديل</button></div><div><span class="role-icon blue">مر</span><p><b>مدير الموارد البشرية</b><small>الموظفون، الرواتب، التقارير</small></p><strong>4 مستخدمين</strong><button class="text-button">تعديل</button></div><div><span class="role-icon green">ق</span><p><b>مدير قسم</b><small>فريقه والحضور والإجازات</small></p><strong>18 مستخدمًا</strong><button class="text-button">تعديل</button></div></div></article>
+        </section>
+
+        <section class="page" id="page-settings" data-title="إعدادات النظام">
+          <div class="page-head"><div><p class="eyebrow"><span></span> تهيئة مرنة</p><h1>إعدادات النظام</h1><p>خصّص بيانات المنشأة وسياسات الموارد البشرية.</p></div><div class="head-actions"><button class="button primary" id="saveSettings">حفظ التغييرات</button></div></div>
+          <form class="panel settings-form" id="settingsForm"><div class="settings-section"><h2>بيانات المنشأة</h2><div class="form-grid"><label>اسم المنشأة<input value="شركة مسار للتقنية"></label><label>الرقم الموحد<input value="7001234567"></label><label>البريد الإداري<input type="email" value="hr@masar-erp.com"></label><label>المنطقة الزمنية<select><option>الرياض (UTC+3)</option></select></label></div></div><div class="settings-section"><h2>سياسة الدوام</h2><div class="form-grid"><label>بداية الدوام<input type="time" value="08:00"></label><label>نهاية الدوام<input type="time" value="17:00"></label><label>سماح التأخير بالدقائق<input type="number" value="15"></label><label>أيام العمل<select><option>الأحد - الخميس</option></select></label></div></div><div class="settings-section"><h2>خيارات النظام</h2><label class="toggle-row"><span><b>التنبيهات الذكية</b><small>تنبيهات العقود والوثائق والإجازات</small></span><input type="checkbox" checked><i></i></label><label class="toggle-row"><span><b>النسخ الاحتياطي اليومي</b><small>نسخة مشفرة يوميًا عند الساعة 4 صباحًا</small></span><input type="checkbox" checked><i></i></label></div></form>
+        </section>
+      </div>
+      <footer class="app-footer"><span>© 2026 نظام مسار الذكي ERP</span><span><i class="live-dot"></i> الإصدار 1.0.0 - نسخة تجريبية</span></footer>
+    </main>
+  </div>
+
+  <div class="modal" id="employeeModal" inert>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card form-modal" role="dialog" aria-modal="true" aria-labelledby="employeeModalTitle">
+      <div class="modal-head"><div><p class="eyebrow"><span></span> ملف موظف جديد</p><h2 id="employeeModalTitle">إضافة موظف</h2></div><button class="modal-close" data-close-modal aria-label="إغلاق"><svg><use href="#i-x"/></svg></button></div>
+      <form id="employeeForm"><div class="form-grid"><label>الاسم الكامل<input name="name" required placeholder="مثال: محمد أحمد العتيبي"></label><label>الرقم الوظيفي<input name="id" required placeholder="EMP-009"></label><label>المسمى الوظيفي<input name="role" required placeholder="مطور برمجيات"></label><label>الإدارة<select name="department" required><option>تقنية المعلومات</option><option>الموارد البشرية</option><option>المالية والمحاسبة</option><option>المبيعات</option><option>العمليات</option></select></label><label>المدير المباشر<input name="manager" placeholder="اسم المدير"></label><label>تاريخ التعيين<input name="joinDate" type="date" required></label><label>الراتب الأساسي<input name="salary" type="number" min="0" required placeholder="12000"></label><label>الحالة<select name="status"><option>نشط</option><option>في إجازة</option><option>عن بُعد</option></select></label></div><div class="modal-actions"><button type="button" class="button secondary" data-close-modal>إلغاء</button><button type="submit" class="button primary">حفظ الموظف</button></div></form>
+    </div>
+  </div>
+
+  <div class="modal" id="profileModal" inert>
+    <div class="modal-backdrop" data-close-profile></div>
+    <div class="modal-card profile-modal" role="dialog" aria-modal="true"><button class="modal-close floating" data-close-profile aria-label="إغلاق"><svg><use href="#i-x"/></svg></button><div id="profileContent"></div></div>
+  </div>
+
+  <div class="modal" id="confirmModal" inert>
+    <div class="modal-backdrop" data-close-confirm></div><div class="modal-card confirm-card"><span class="confirm-icon"><svg><use href="#i-wallet"/></svg></span><h2>تشغيل مسير يوليو؟</h2><p>سيتم احتساب الاستحقاقات والاستقطاعات لجميع الموظفين. هذه نسخة واجهة تجريبية ولن يتم تنفيذ دفعات حقيقية.</p><div class="modal-actions"><button class="button secondary" data-close-confirm>إلغاء</button><button class="button primary" id="confirmPayroll">تأكيد التشغيل</button></div></div>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
